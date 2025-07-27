@@ -1,0 +1,428 @@
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    right: 0;
+    top: 0;
+    left: 0;
+    background: #fac031;
+    z-index: 1000;
+    transition: top 0.3s ease-in-out;
+    margin-top: 0;
+    height: 8.8vh;
+    position:relative;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  
+  
+  }
+  
+  .header h1 {
+    margin: 0;
+  }
+  
+  .icon-container {
+    display: flex;
+    gap: 105px;
+  }
+  .icon-container img {
+    width: 60px; /* Set width and height to the same value for a circle */
+    height: 60px;
+    border-radius: 100%; /* Ensures the image is a circle */
+    object-fit: cover; /* Ensures the image fits inside the circle without distortion */
+    overflow: hidden; 
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  :root{
+    --main-color:#2980b9;
+    --red:#e74c3c;
+    --orange:#f39c12;
+    --light-color:#666;
+    --light-bg:#eee;
+    --white:#fff;
+    --black:#fac031;
+    --border:.1rem solid rgba(0,0,0,.3);
+    --box-shodow:0 .5rem 1rem rgba(0,0,0,.1);
+  }
+  
+  
+  
+  *{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+  
+  }
+  
+  
+  .he{
+  padding: 200px 0;
+  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(pic.png);
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  
+  }
+  .he h1{
+  color:red;
+  font-size: 50px;
+  }
+  
+  html{
+    scroll-behavior: smooth;
+  }
+  
+  section{
+    width: 100%;
+  }
+  
+  section nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    right: 0;
+    top: 0;
+    left: 0;
+    background: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    z-index: 1000;
+    transition: top 0.3s ease-in-out;
+  
+  }
+  
+  section  .logo img{
+    width: 22%;
+    height:25%;
+   
+  }
+  
+  section nav ul{
+    list-style: none;
+  }
+  
+  section nav ul li{
+    display: inline-block;
+    margin: 0 15px;
+  }
+  
+  section nav ul li a{
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    font-size: 17px;
+    transition: 0.1s;
+  }
+  
+  section nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #fac031;
+    display: block;
+    transition: 0.2s linear;
+  }
+  
+  section nav ul li a:hover::after{
+    width: 100%;
+  }
+  
+  section nav ul li a:hover{
+    color: #fac031;
+  }
+  
+  section nav .icon i{
+    font-size: 18px;
+    color: #000;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  section nav .icon i:hover{
+    color: #fac031;
+  }
+  
+  section .main{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    top: 130px;
+  }
+  
+  section .main .men_text h1{
+    font-size: 60px;
+    position: relative;
+    top: -90px;
+    left: 20px;
+  }
+  
+  section .main .men_text h1 span{
+    margin-left: 15px;
+    color: #fac031;
+    font-family: mv boli;
+    line-height: 22px;
+    font-size: 70px;
+  }
+  
+  section .main .main_image img{
+    width: 650px;
+    position: relative;
+    left: 70px;
+  }
+  
+  section p{
+    width: 650px;
+    text-align: justify;
+    position: relative;
+    left: 123px;
+    bottom: 120px;
+    line-height: 22px;
+  }
+  
+  section .main_btn{
+    background: #fac031;
+    position: relative;
+    left: 123px;
+    bottom: 30px;
+    width: 150px;
+    cursor: pointer;
+    padding: 12px 25px;
+  }
+  
+  section .main_btn a{
+    color: #fff;
+    margin-right: 5px;
+    text-decoration: none;
+  }
+  
+  section .main_btn i{
+    color: #fff;
+    transition: 0.3s;
+  }
+  
+  section .main_btn:hover i{
+    transform: translateX(7px);
+  }
+  
+  button {
+    background: #fac031;
+    position: relative;
+    cursor: pointer;
+    padding: 8px 15px;
+    border-style: inherit;
+    height : 25%;
+  
+  }
+  
+  a button{
+    color: #fffdfd;
+    margin-right: 5px;
+    text-decoration: none;
+  }
+  
+  button i{
+    color: #e20a0a;
+    transition: 0.3s;
+  }
+  
+  button:hover i{
+    transform: translateX(7px);
+  }
+  section nav .icon span{
+    position: relative;
+    display: inline-block;   
+    top: -5px;
+    right: 9px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-size: 13px;
+    font-weight: bold;
+    padding: 2px 2px;
+    border-radius: 50%;
+  }
+  
+  
+  
+  
+  
+  
+
+  
+
+
+
+
+  
+/*Footer*/
+
+footer{
+    width: 100%;
+    padding: 30px 0 0 20px;
+    background: #eeeeee;
+  }
+  
+  footer .footer_main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+  
+  footer .footer_main .footer_tag{
+    text-align: center;
+  }
+  
+  footer .footer_main .footer_tag h2{
+    color: #000;
+    margin-bottom: 25px;
+    font-size: 30px;
+  }
+  
+  footer .footer_main .footer_tag p{
+    margin: 10px 0;
+  }
+  
+  footer .footer_main .footer_tag i{
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  
+  footer .footer_main .footer_tag i:hover{
+    color: #fac031;
+  }
+  
+  footer .end{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+  }
+  
+  footer .end span{
+    color: #fac031;
+    margin-left: 10px;
+  }
+  
+  ::-webkit-scrollbar{
+    width: 13px;
+  }
+  
+  ::-webkit-scrollbar-track{
+    border-radius: 15px;
+    box-shadow: inset 0 0 5px rgba(0,0,0,0.5);
+  }
+  
+  ::-webkit-scrollbar-thumb{
+    background: #fac031;
+    border-radius: 15px;
+  }
+  
+  
+  
+  
+  
+  body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+  }
+
+  
+
+
+
+
+
+
+
+  /* Container for the contacts/messages section */
+.contacts {
+    padding: 40px 5%;
+    background-color: #f9f9f9;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Heading style */
+  .contacts .heading {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #333;
+    text-transform: capitalize;
+  }
+  
+  /* Box container for layout */
+  .contacts .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+  }
+  
+  /* Individual message box */
+  .contacts .box {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    transition: 0.3s ease;
+    position: relative;
+  }
+  
+  .contacts .box:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Paragraph and spans inside box */
+  .contacts .box p {
+    font-size: 15px;
+    color: #444;
+    margin: 10px 0;
+  }
+  
+  .contacts .box span {
+    font-weight: bold;
+    color: #222;
+  }
+  
+  /* Delete button */
+  .contacts .delete-btn {
+    display: inline-block;
+    margin-top: 15px;
+    background: #e74c3c;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: 0.2s;
+  }
+  
+  .contacts .delete-btn:hover {
+    background: #c0392b;
+  }
+  
+  /* Empty message style */
+  .contacts .empty {
+    text-align: center;
+    font-size: 18px;
+    color: #999;
+    margin-top: 50px;
+  }
+  
